@@ -27,8 +27,8 @@ class Work:
         # 定位到资产列表
         driver.find_element_by_id("username").clear()
         driver.find_element_by_id("password").clear()
-        driver.find_element_by_id("username").send_keys('20038002')
-        driver.find_element_by_id("password").send_keys("W@26033618")
+        driver.find_element_by_id("username").send_keys('')
+        driver.find_element_by_id("password").send_keys("")
         driver.find_element_by_class_name('login_box_landing_btn').click()
         sleep(1)
         # 这个按钮是动态id, 也就是说点击之后url不变, 这就导致这个按钮新产生的按钮无法查找??
